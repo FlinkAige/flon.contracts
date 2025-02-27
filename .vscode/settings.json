@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "chrono": "cpp",
+        "typeinfo": "cpp",
+        "typeindex": "cpp",
+        "*.ipp": "cpp",
+        "text_encoding": "cpp",
+        "ostream": "cpp",
+        "stdexcept": "cpp",
+        "string": "cpp",
+        "filesystem": "cpp"
+    }
+}

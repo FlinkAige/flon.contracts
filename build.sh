@@ -42,18 +42,18 @@ fi
 
 FULLON_DIR_CMAKE_OPTION=''
 
-if [[ "${BUILD_TESTS}" == "ON" ]]; then
-  if [[ ! -f "$FULLON_BUILD_DIR/lib/cmake/fullon/fullon-config.cmake" ]]; then
-    echo "Invalid path to fullon build directory: $FULLON_BUILD_DIR"
-    echo "fullon build directory is required to build tests. If you do not wish to build tests, leave off the -l option."
-    echo "Cannot proceed. Exiting..."
-    exit 1;
-  fi
+# if [[ "${BUILD_TESTS}" == "ON" ]]; then
+#   if [[ ! -f "$FULLON_BUILD_DIR/lib/cmake/fullon/fullon-config.cmake" ]]; then
+#     echo "Invalid path to fullon build directory: $FULLON_BUILD_DIR"
+#     echo "fullon build directory is required to build tests. If you do not wish to build tests, leave off the -l option."
+#     echo "Cannot proceed. Exiting..."
+#     exit 1;
+#   fi
 
-  echo "Using fullon build directory at: $FULLON_BUILD_DIR"
-  echo ""
-  FULLON_DIR_CMAKE_OPTION="-Dfullon_DIR=${FULLON_BUILD_DIR}/lib/cmake/fullon"
-fi
+#   echo "Using fullon build directory at: $FULLON_BUILD_DIR"
+#   echo ""
+#   FULLON_DIR_CMAKE_OPTION="-Dfullon_DIR=${FULLON_BUILD_DIR}/lib/cmake/fullon"
+# fi
 
 CDT_DIR_CMAKE_OPTION=''
 
